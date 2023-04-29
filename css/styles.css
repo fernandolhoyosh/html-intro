@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    line-height: 1.5;
+}
+
+main, aside, section{
+    border: red 1px solid;
+}
+
+.contenedor-main-flex{
+    margin: 0 auto;
+    max-width: 80%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.panel-izquierdo{
+    width: 30%;
+}
+
+.panel-derecho{
+    width: 70%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
