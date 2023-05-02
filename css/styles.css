@@ -1,3 +1,5 @@
+
+
 *{
     margin:0;
     padding: 0;
@@ -11,29 +13,473 @@ html{
 
 body{
     line-height: 1.5;
+    background-color: #030a6dcb;
 }
 
-main, aside, section{
-    border: red 1px solid;
+main, aside, section, picture, div, header, article, form{
+  /*border: red 1px solid;*/
 }
+
+/*-----------------------------------------------------------------------------------*/
+/*  ETIQUETAS Y ESTILOS GENERALES */
+/*------------------------------------------------------------------------------------*/
+
+h1{
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+h3 {
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-bottom: 3%;
+  font-size: 1.2rem;
+  background-color: #030c85;
+  color: aliceblue;
+  border-radius: 1.5em;
+}
+
+h4 {
+  font-size: 1rem;
+  padding: 2%;
+
+}
+
+p {
+  margin: 2%;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+li{
+  font-size: 1rem;
+  margin-left: 2em;
+}
+
+i{
+    color: rgb(0, 3, 170);
+    font-size: 25px;
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td{
+  border: 1px solid #01053f;;
+  padding: 2%;
+  text-align: left;
+  
+}
+
+th{
+  background-color: #032185;;
+  color: aliceblue;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*CONTENEDOR MAIN PRINCIPAL DE LA HOJA DE VIDA*/
+/*------------------------------------------------------------------------------------*/
 
 .contenedor-main-flex{
-    margin: 0 auto;
-    max-width: 80%;
-    width: 100%;
+    margin: 5% auto;
+    max-width: 80vw;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
+/*-----------------------------------------------------------------------------------*/
+/*  SECCIONES DEL MAIN */
+/*------------------------------------------------------------------------------------*/
+
 .panel-izquierdo{
-    width: 30%;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background: linear-gradient(rgba(0, 2, 100, 0.986), rgb(0, 102, 150));
+
 }
 
 .panel-derecho{
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(235, 232, 232, 0.842);
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  DIVISIONES DE LA SECCION IZQUIERDA */
+/*------------------------------------------------------------------------------------*/
+
+.box-picture{
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+/*pendiente por yo corregir el bug del DIV de abajo, esta afectando las barras de progreso de habilidades y el box de contacto*/
+
+div{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+.photo-profile{
+    border-radius: 100%;
+    border: rgb(0, 24, 158) 5px solid;
+    box-shadow: 5px 5px 5px #02085e; 
+    /*padding: 3%;*/
+    width: 100%;
+  }
+
+.box-contacto{
+  color: aliceblue;
+  margin-bottom: 10%;
+}
+
+  .box-contacto > p{
+    margin-left: 20%;
+}
+
+.box-contacto > p{
+    position: relative;
+}
+
+.box-contacto > p > span{
+    width: 18%;
+    position: absolute;
+    display: inline-flex;
+    justify-content: flex-end;
+    left: -22%;
+    bottom: -15%;
+    background-color: aliceblue;
+    padding: 1% 3%;
+    border-radius: 10%;
+    box-shadow: 3px 3px 5px #777; 
+}
+
+.box-contacto > p > a{
+  color: aliceblue;
+}
+
+.box-habilidades{
+  width: 96%;
+  color: aliceblue;
+  margin-bottom: 10%;
+  
+}
+
+.box-intereses{
+  width: 96%;
+  color: aliceblue;
+  margin-bottom: 10%;
+}
+
+
+.box-aptitudes{
+  width: 96%;
+  color: aliceblue;
+  margin-bottom: 10%;
+}
+
+.box-hobbies{
+  width: 96%;
+  color: aliceblue;
+  margin-bottom: 10%;
+}
+
+.box-lenguages{
+  width: 96%;
+  color: aliceblue;
+  margin-bottom: 10%;
+}
+
+.icon-bandera{
+  margin-left: 1em;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#icon-spanish{
+  background-image: url("../icon/espana.png");
+}
+
+#icon-english{
+  background-image: url("../icon/estados-unidos.png");
+}
+
+#icon-portugues{
+  background-image: url("../icon/brasil.png");
+}
+
+.box-lenguages > div > p{
+  width: 50%;
+  margin-left: 1em;
+}
+
+.box-lenguages > div > strong{
+  margin-right: 1em;
+}
+
+
+.items-box-habilidades{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box-habilidades > div > div{
+    border-radius: 2em;
+    width: 50%;
+    height: 50%;
+    background: rgb(0, 0, 66);
+    margin-right: 1em;
+}
+
+.content-progress{
+    border-radius: 2em;
+    height: 100%;
+    background: aliceblue;
+}
+
+#progress-1{
+    width: 80%;
+}
+#progress-2{
+    width: 60%;
+}
+#progress-3{
+    width: 50%;
+}
+#progress-4{
+    width: 40%;
+}
+#progress-5{
     width: 70%;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.items-box-intereses{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.box-intereses > div > i{
+  width: 10%;
+  margin-left: 1em;
+  color: aliceblue;
+}
+
+.box-intereses > div > p{
+  margin-left: 2em;
+}
+
+.box-aptitudes > ul > li{
+  padding: 3%;
+}
+
+.items-box-lenguages{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.items-box-hobbies{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.box-hobbies > div > i{
+  width: 10%;
+  margin-left: 1em;
+  color: aliceblue;
+}
+
+.box-hobbies > div > p{
+  margin-left: 2em;
+}
+
+
+  /*-----------------------------------------------------------------------------------*/
+/*  DIVISIONES DE LA SECCION DERECHA
+/*------------------------------------------------------------------------------------*/
+.panel-derecho h3 > i{
+  padding: 2%;
+  color: aliceblue;
+}
+
+  .header-encabezado{
+    display: flex;
+    flex-direction: column;
+    width: 94%;
   }
+
+  .header-encabezado > h4{
+    text-align: left;
+    padding: 1%;
+  }
+
+  .header-encabezado > h4 > i{
+    padding: 2%;
+  }
+
+  .article-perfil{
+    width: 94%;
+  }
+
+  .article-educacion{
+    width: 94%;
+  }
+
+  .items-grid-educacion{
+    display: grid;
+    grid-template-columns: 25% 75%;
+  }
+
+  .periodo{
+    margin-left: 10%;
+  }
+
+  .entidad-school{
+    grid-column: 2;
+
+  }
+
+  .article-experiencia-laboral{
+    width: 94%;
+  }
+
+  .items-grid-experiencia{
+    display: grid;
+    grid-template-columns: 25% 75%;
+  }
+
+  .periodo-experiencia > p{
+    margin-left: 10%;
+  }
+
+  /*.funciones-experiencia > p, li{
+
+  }*/
+
+  .article-habilidades-tecnicas{
+    width: 94%;
+  }
+
+  .form-info-contacto{
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .form-info-contacto > input, textarea, button{
+    margin: 1%;
+  }
+
+  .form-info-contacto > h3{
+    width: 100%;
+  }
+
+  .form-info-contacto > input, textarea{
+    margin: 1%;
+    width: 50%;
+  }
+
+  .form-info-contacto > button{
+    text-align: center;
+    width: 8em;
+    height: 3em;
+    border-radius: .8em;
+    cursor: pointer;
+    background-color: #030c85;
+    color: aliceblue;
+  }
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  MEDIA QUERIES
+/*------------------------------------------------------------------------------------*/
+
+
+  /* Estilos para pantallas grandes */
+@media all and (min-width: 1024px) {
+    .contenedor-main-flex {
+      max-width: 1024px;
+    }
+    .panel-izquierdo {
+      max-width: 30%;
+    }
+    .panel-derecho {
+      max-width: 70%;
+    }
+  }
+
+  /* Estilos para pantallas medianas */
+  @media all and (max-width: 1023px) {
+    .contenedor-main-flex {
+      max-width: 90%;
+    }
+    
+    .panel-izquierdo {
+      max-width: 100%;
+      width: 100%;
+    }
+    .panel-derecho {
+      max-width: 100%;
+    }
+
+    .box-habilidades > div > div{
+      width: 50%;
+      height: 4vh;
+  }
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media all and (max-width: 768px) {
+    .contenedor-main-flex {
+      flex-direction: column;
+    }
+    .panel-izquierdo {
+      order: 1;
+      max-width: 100%;
+    }
+    .panel-derecho {
+      order: 2;
+      max-width: 100%;
+    }
+
+    .box-habilidades > div > div{
+      width: 50%;
+      height: 3vh;
+  }
+
+  }
+
+
