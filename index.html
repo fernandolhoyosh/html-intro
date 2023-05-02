@@ -6,144 +6,220 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hoja de Vida Personal</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/9b900acce4.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main class="contenedor-main-flex">
       <aside class="panel-izquierdo">
-        <img
-          src="img/fernando.png"
-          alt="Foto de presentación - Fernando Hoyos"
-        />
+        <picture class="box-picture">
+          <img
+            src="img/fernando.png"
+            alt="Foto de presentación - Fernando Hoyos"
+          class="photo-profile"/>
+        </picture>
 
-        <h2>CONTACTO</h2>
+        <div class="box-contacto">
+          <h2>CONTACTO</h2>
+          <p><span><i class="fa-solid fa-envelope"></i></span>fernandolhoyosh@gmail.com</p>
+          <p><span><i class="fa-solid fa-phone"></i></span>+57 3022684502</p>
+          <p><span><i class="fa-solid fa-location-dot"></i></span>Lorica - Córdoba - Colombia</p>
+          <p><span><i class="fa-brands fa-linkedin"></i></span><a
+            href="https://www.linkedin.com/in/fernando-luis-hoyos-hernandez-3683a2270"
+            target="_blank"
+            >LinkedIn</a
+          ></p>
+          <p><span><i class="fa-brands fa-github"></i></span><a href="https://github.com/fernandolhoyosh" target="_blank"
+            >GitHub</a
+          ></p>
+          
+          <p><span><i class="fa-brands fa-slack"></i></span>Slack</p>
+        </div>
 
-        <p>fernandolhoyosh@gmail.com</p>
-        <p>+57 3022684502</p>
-        <p>Lorica - Córdoba - Colombia</p>
-        <a href="https://www.linkedin.com/in/fernando-luis-hoyos-hernandez-3683a2270" target="_blank">LinkedIn</a>
-        <a href="https://github.com/fernandolhoyosh" target="_blank">GitHub</a>
-        <p>Slack</p>
+        <div class="box-habilidades">
+          <h2>HABILIDADES</h2>
+          <div class="items-box-habilidades"><p>Diseño Web</p><div><div id="progress-1" class="content-progress"></div></div>
+          </div>
+          <div class="items-box-habilidades"><p>JavaScript</p><div><div id="progress-2" class="content-progress"></div></div>
+          </div>
+          <div class="items-box-habilidades"><p>PHP</p><div><div id="progress-3" class="content-progress"></div></div>
+          </div>
+          <div class="items-box-habilidades"><p>MySQL</p><div><div id="progress-4" class="content-progress"></div></div>
+          </div>
+          <div class="items-box-habilidades"><p>Bootstrap</p><div><div id="progress-5" class="content-progress"></div></div>
+          </div>
+        </div>
 
-        <h2>HABILIDADES</h2>
+        <div class="box-intereses">
+          <h2>INTERESES</h2>
+          <div class="items-box-intereses"><i class="fa-solid fa-atom"></i><p>Inteligencia artificial</p></div>
+          <div class="items-box-intereses"><i class="fa-brands fa-js"></i><p>JavaScript</p></div>
+          <div class="items-box-intereses"><i class="fa-brands fa-react"></i><p>React</p></div>
+          <div class="items-box-intereses"><i class="fa-brands fa-node"></i><p>Node Js</p></div>
+          <div class="items-box-intereses"><i class="fa-solid fa-mobile"></i><p>Apps Moviles</p></div>
+          <div class="items-box-intereses"><i class="fa-brands fa-square-git"></i><p>Git</p></div>
+          <div class="items-box-intereses"><i class="fa-brands fa-bootstrap"></i><p>Bootstrap</p></div>
+          <div class="items-box-intereses"><i class="fa-solid fa-database"></i><p>Bases de datos</p></div>
+          <div class="items-box-intereses"><i class="fa-solid fa-desktop"></i><p>Metodología Scrum</p></div>
+        </div>
 
-        <p>Diseño Web</p>
-        <p>JavaScript</p>
-        <p>PHP</p>
-        <p>MySQL</p>
-        <p>Bootstrap</p>
+        <div class="box-aptitudes">
+          <h2>APTITUDES</h2>
+          <ul>
+            <li>Trabajo en equipo</li>
+            <li>Iniciativa</li>
+            <li>Resolución de problemas</li>
+            <li>Aprendizaje continuo</li>
+            <li>Comunicación efectiva</li>
+            <li>Optimización de procesos</li>
+          </ul>
+        </div>
 
-        <h2>INTERESES</h2>
-        <p>Inteligencia artificial</p>
-        <p>JavaScript</p>
-        <p>React</p>
-        <p>Node Js</p>
-        <p>Apps Moviles</p>
-        <p>Git</p>
-        <p>Bootstrap</p>
-        <p>Metodología Scrum</p>
+        <div class="box-lenguages">
+          <h2>IDIOMAS</h2>
+          <div class="items-box-lenguages"><picture id="icon-spanish" class="icon-bandera"></picture><p>Español</p><strong>C2</strong></div>            
+          <div class="items-box-lenguages"><picture id="icon-english" class="icon-bandera"></picture><p>Ingles</p><strong>A1</strong></div>            
+          <div class="items-box-lenguages"><picture id="icon-portugues" class="icon-bandera"></picture><p>Portugues-BR</p><strong>A2</strong></div>            
+        </div>
 
-        <h2>HOBBIES</h2>
-        <p>Viajar en Moto</p>
-        <p>Videojuegos</p>
-        <p>Series</p>
-        <p>Historias</p>
-        <p>Mitologia griega</p>
-        <p>Futbol</p>
+        <div class="box-hobbies">
+          <h2>HOBBIES</h2>
+          <div class="items-box-hobbies"><i class="fa-sharp fa-solid fa-motorcycle"></i><p>Viajar en Moto</p></div>
+          <div class="items-box-hobbies"><i class="fa-solid fa-gamepad"></i><p>Videojuegos</p></div>
+          <div class="items-box-hobbies"><i class="fa-solid fa-video"></i><p>Series</p></div>
+          <div class="items-box-hobbies"><i class="fa-solid fa-book"></i><p>Historias</p></div>
+          <div class="items-box-hobbies"><i class="fa-solid fa-umbrella-beach"></i><p>Playa</p></div>
+          <div class="items-box-hobbies"><i class="fa-sharp fa-solid fa-futbol"></i><p>Futbol</p></div>
+          
+        </div>
       </aside>
       <section class="panel-derecho">
-        <h1>Fernando Luis Hoyos Hernandez</h1>
-        <h3>DESARROLLADOR WEB</h3>
-        <h3>ANALISTA DE TI</h3>
-        <h3>PERFIL</h3>
-        <p>
-          Como desarrollador web y analista de TI, tengo habilidades altamente
-          técnicas y una capacidad sólida pasdra resolver problemas complejos en
-          el mundo digital. Soy experto en el desarrollo de aplicaciones web y
-          en la creación de soluciones tecnológicas innovadoras que impulsan la
-          eficiencia y la productividad. Además, soy un pensador analítico y
-          estratégico, capaz de analizar y evaluar datos y procesos para
-          optimizar el rendimiento y tomar decisiones informadas. Mi habilidad
-          para colaborar con otros miembros del equipo y comunicar mis ideas
-          técnicas de manera clara y concisa me hace un valioso activo en
-          cualquier organización.
-        </p>
-        <h3>EDUCACIÓN</h3>
-        <p>2023 - Desarrollador Web Full Stack (actual)</p>
-        <p>Ada School</p>
-        <p>2019 - 2023 - Ingenieria de Software (Semestre VIII - actual)</p>
-        <p>Universidad de Cartagena, Cereté</p>
-        <p>2015 - Tecnico en sistemas y redes</p>
-        <p>Instituto tecnologico San Agustín, Monteria</p>
-        <p>2013 - Bachiller Academico</p>
-        <p>Institución Educativa Colombia, Carepa</p>
-        <h3>EXPERIENCIA LABORAL</h3>
-        <p>2022 - 2023 - RED CARNICA S.A.S</p>
-        <p>Analista de TI</p>
-        <h4>Funciones:</h4>
-        <ul>
-            <li>Reportar incidencias en el software de produccion</li>
-            <li>Instalacion y configuracion de camaras CCTV</li>
-            <li>Manejo de Active Directoy y politicas de usuarios</li>
-            <li>Consultas y generacion de reportes en SQL</li>
-            <li>Implementacion de herramientas tecnologicas para optimizar procesos</li>
-            <li>Implementacion de Office 365</li>
-            <li>Implementacion de Office 365</li>
-        </ul>
-        
-        <p>2016 - 2021 - RED CARNICA S.A.S</p>
-        <p>Auxiliar de sistemas</p>
-        <h4>Funciones:</h4>
-        <ul>
-            <li>Garantizar el adecuado funcionamiento de los equipos tecnologicos</li>
-            <li>Mantenimiento de equipos, impresoras, camaras</li>
-            <li>Soporte a los usuarios con los aplicativos de la empresa</li>
-            <li>Instalacion y configuracion de reloj Biometricos</li>
-            <li>Instalacion de cableado estructurado</li>
-            <li>Instalacion y configuracion de puntos wifi AP</li>
-        </ul>
+        <header class="header-encabezado">
+          <h1>Fernando Luis Hoyos Hernandez</h1>
+          <h4><i class="fa-solid fa-laptop-code"></i>DESARROLLADOR WEB</h4>
+          <h4><i class="fa-solid fa-network-wired"></i>ANALISTA DE TI</h4>
+        </header>
 
-        <h3>Habilidades técnicas y tecnologías que quieres manejar</h3>
+        <article class="article-perfil">
+          <h3><i class="fa-solid fa-user"></i>PERFIL</h3>
+          <p>
+            Como desarrollador web y analista de TI, tengo habilidades altamente
+            técnicas y una capacidad sólida pasdra resolver problemas complejos
+            en el mundo digital. Soy experto en el desarrollo de aplicaciones
+            web y en la creación de soluciones tecnológicas innovadoras que
+            impulsan la eficiencia y la productividad. Además, soy un pensador
+            analítico y estratégico, capaz de analizar y evaluar datos y
+            procesos para optimizar el rendimiento y tomar decisiones
+            informadas. Mi habilidad para colaborar con otros miembros del
+            equipo y comunicar mis ideas técnicas de manera clara y concisa me
+            hace un valioso activo en cualquier organización.
+          </p>
+        </article>
 
-    <table border="1px">
-      <tr>
-        <th>Tecnología</th>
-        <th>Habilidades tecnicas</th>
-      </tr>
-      <tr>
-        <td>JavaScript</td>
-        <td>Dominar javascript para aprender TypeScript</td>
-      </tr>
-      <tr>
-        <td>Angular</td>
-        <td>Crear aplicaciones web modernas y dinámicas</td>
-      </tr>
-      <tr>
-        <td>React</td>
-        <td>Crear interfaces de usuario interactivas de forma sencilla</td>
-      </tr>
-      <tr>
-        <td>MongoDB</td>
-        <td>Crear bases de datos sencillas no relacionales</td>
-      </tr>
-      <tr>
-        <td>Python</td>
-        <td>Crear aplicaciones de aprendizaje automatico</td>
-      </tr>
-    </table>
-    <h2>V. Información de contacto</h2>
+        <article class="article-educacion">
+          <h3><i class="fa-solid fa-graduation-cap"></i>EDUCACIÓN</h3>
+          <div class="items-grid-educacion">
+            <p class="periodo">2023 -</p>
+            <p class="programa">Desarrollador Web Full Stack (actual)</p>
+            <p class="entidad-school">Ada School</p>
+            <p class="periodo">2019 - 2023 -</p>
+            <p class="programa">Ingenieria de Software (Semestre VIII - actual)</p>
+            <p class="entidad-school">Universidad de Cartagena, Cereté</p>
+            <p class="periodo">2015 -</p>
+            <p class="programa">Tecnico en sistemas y redes</p>
+            <p class="entidad-school">Instituto tecnologico San Agustín, Monteria</p>
+            <p class="periodo">2013 -</p>
+            <p class="programa">Bachiller Academico</p>
+            <p class="entidad-school">Institución Educativa Colombia, Carepa</p>
+          </div>
+        </article>
 
-    <label for="email">Email:</label>
-    <input type="text" placeholder="Ingrese el email..." />
+        <article class="article-experiencia-laboral">
+          <h3><i class="fa-solid fa-briefcase"></i>EXPERIENCIA LABORAL</h3>
+          <div class="items-grid-experiencia">
+            <div class="periodo-experiencia"><p>2022 - 2023 -</p></div>
+          <div class="funciones-experiencia"><p>RED CARNICA S.A.S</p>
+            <p>Analista de TI</p>
+            <h4>Funciones:</h4>
+            <ul>
+              <li>Reportar incidencias en el software de produccion</li>
+              <li>Instalacion y configuracion de camaras CCTV</li>
+              <li>Manejo de Active Directoy y politicas de usuarios</li>
+              <li>Consultas y generacion de reportes en SQL</li>
+              <li>
+                Implementacion de herramientas tecnologicas para optimizar
+                procesos
+              </li>
+              <li>Implementacion de Office 365</li>
+              <li>Despegue de apliacaciones web en Intranet</li>
+            </ul>
+          </div>
+          <div class="periodo-experiencia"><p>2016 - 2021 -</p></div>
+          <div class="funciones-experiencia"><p>RED CARNICA S.A.S</p>
+            <p>Auxiliar de sistemas</p>
+            <h4>Funciones:</h4>
+            <ul>
+              <li>
+                Garantizar el adecuado funcionamiento de los equipos tecnologicos
+              </li>
+              <li>Mantenimiento de equipos, impresoras, camaras</li>
+              <li>Soporte a los usuarios con los aplicativos de la empresa</li>
+              <li>Instalacion y configuracion de reloj Biometricos</li>
+              <li>Instalacion de cableado estructurado</li>
+              <li>Instalacion y configuracion de puntos wifi AP</li>
+            </ul>
+          </div>
+          </div>
+        </article>
 
-    <textarea
-      name="textarea"
-      id=""
-      cols="30"
-      rows="10"
-      placeholder="Escriba su mensaje aqui..."></textarea>
-    <button>Contactar</button>
+        <article class="article-habilidades-tecnicas">
+          <h3><i class="fa-solid fa-lightbulb"></i>HABILIDADES TECNICAS A MANEJAR</h3>
+
+          <table>
+            <tr>
+              <th>Tecnología</th>
+              <th>Habilidades técnicas</th>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Dominar javascript para aprender TypeScript</td>
+            </tr>
+            <tr>
+              <td>Angular</td>
+              <td>Crear aplicaciones web modernas y dinámicas</td>
+            </tr>
+            <tr>
+              <td>React</td>
+              <td>
+                Crear interfaces de usuario interactivas de forma sencilla
+              </td>
+            </tr>
+            <tr>
+              <td>MongoDB</td>
+              <td>Crear bases de datos sencillas no relacionales</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>Crear aplicaciones de aprendizaje automatico</td>
+            </tr>
+          </table>
+        </article>
+
+        <form class="form-info-contacto" action="">
+          <h3><i class="fa-solid fa-address-card"></i>INFORMACIÓN DE CONTACTO</h3>
+            <input type="text" placeholder="Ingrese el email..." />
+            <textarea
+              name="textarea"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Escriba su mensaje aqui..."
+            ></textarea>
+            <button>Contactar</button>
+        </form>
       </section>
     </main>
-
   </body>
 </html>
