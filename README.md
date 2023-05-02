@@ -2,4 +2,7 @@
 
 Hoja de vida - Fernando Hoyos
 
-![image](https://user-images.githubusercontent.com/108826210/235583770-d5013538-6878-488c-9022-5d02b1e95eec.png)
+Print previa de la página
+
+![image](https://user-images.githubusercontent.com/108826210/235752481-d79d7622-c20b-42b1-bd88-13ae349a32a2.png)
+
