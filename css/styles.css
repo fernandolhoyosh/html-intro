@@ -1,4 +1,7 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
 
 *{
     margin:0;
@@ -25,17 +28,22 @@ body{
 /*------------------------------------------------------------------------------------*/
 
 h1{
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   margin-top: 10%;
   margin-bottom: 5%;
+  color: #000988;
+  font-family: 'Viga', sans-serif;
+  border-bottom: #000988 2px solid;
+  padding-bottom: 2%;
 }
 
 h2 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 5%;
   margin-bottom: 5%;
+  font-family: 'Bruno Ace SC', cursive;
 }
 
 h3 {
@@ -43,15 +51,16 @@ h3 {
   margin-left: 2%;
   margin-bottom: 3%;
   font-size: 1.2rem;
-  background-color: #030c85;
+ /* background-color: #030c85;*/
+ background: linear-gradient(to right,rgba(0, 2, 100, 0.986), rgb(0, 102, 150));
   color: aliceblue;
   border-radius: 1.5em;
+  font-family: 'Bruno Ace SC', cursive;
 }
 
 h4 {
   font-size: 1rem;
   padding: 2%;
-
 }
 
 p {
@@ -71,8 +80,9 @@ i{
 }
 
 table{
+  margin-left: auto;
   border-collapse: collapse;
-  width: 100%;
+  width: 96%;
 }
 
 th, td{
@@ -149,7 +159,7 @@ div{
     border: rgb(0, 24, 158) 5px solid;
     box-shadow: 5px 5px 5px #02085e; 
     /*padding: 3%;*/
-    width: 100%;
+    width: 90%;
   }
 
 .box-contacto{
@@ -362,13 +372,23 @@ div{
     grid-template-columns: 25% 75%;
   }
 
+  .programa{
+    font-weight: bold;
+  }
+
   .periodo{
+    display: flex;
     margin-left: 10%;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #555;
   }
 
   .entidad-school{
     grid-column: 2;
-
+    font-style: oblique;
+    color: #000547;
   }
 
   .article-experiencia-laboral{
@@ -380,13 +400,28 @@ div{
     grid-template-columns: 25% 75%;
   }
 
-  .periodo-experiencia > p{
-    margin-left: 10%;
+  .periodo-experiencia{
+    align-items: center;
+    margin: 4%;
   }
 
-  /*.funciones-experiencia > p, li{
+  .periodo-experiencia > p{
+    margin-left: 10%;
+    font-weight: bold;
+    color: #555;
+  }
 
-  }*/
+  .funciones-experiencia > ul > li{
+    padding: 1%;
+  }
+
+  .text-company-experiencia{
+    font-weight: bold;
+  }
+
+  .text-cargo-company{
+    color: #000547;
+  }
 
   .article-habilidades-tecnicas{
     width: 94%;
@@ -396,15 +431,15 @@ div{
     width: 94%;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
   }
 
   .form-info-contacto > input, textarea, button{
-    margin: 1%;
+    margin: 2%;
   }
 
   .form-info-contacto > h3{
-    width: 100%;
+    width: 98%;
   }
 
   .form-info-contacto > input, textarea{
