@@ -4,7 +4,7 @@ Hola!
 
 Esta es mi hoja de vida - Fernando Hoyos
 
-pueden visualziar la pagina en el enlace abajo:
+pueden visualizar la pagina en el enlace abajo:
 
 link: https://fernandolhoyosh.doublehdevs.net/
 
