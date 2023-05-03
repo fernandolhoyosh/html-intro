@@ -474,6 +474,16 @@ div{
     .panel-derecho {
       max-width: 70%;
     }
+
+    table{
+      align-items: center;
+    }
+  
+    th{
+      text-align: center;
+      justify-content: center;
+      padding: 1em;
+    }
   }
 
   /* Estilos para pantallas medianas */
@@ -493,6 +503,16 @@ div{
     .box-habilidades > div > div{
       width: 50%;
       height: 4vh;
+  }
+
+  table{
+    align-items: center;
+  }
+
+  th{
+    text-align: center;
+    justify-content: center;
+    padding: 1em;
   }
   }
   
@@ -514,6 +534,40 @@ div{
       width: 50%;
       height: 3vh;
   }
+
+  table{
+    align-items: center;
+  }
+
+  th{
+    text-align: center;
+    justify-content: center;
+    padding: 1em;
+  }
+
+  }
+
+  /*Estilos para pantallas moviles*/
+
+  @media screen and (max-width: 680px) {
+    h3{
+      border-radius: 8px;
+      text-align: center;
+      font-size: 1rem;
+    }
+    .panel-derecho  i{
+      margin-right: 3%;
+    }
+    table{
+      align-items: center;
+      font-size: .8em;
+    }
+
+    th{
+      text-align: center;
+      justify-content: center;
+      padding: 1em;
+    }
 
   }
 
