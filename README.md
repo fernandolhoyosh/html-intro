@@ -1,6 +1,12 @@
 # html-intro
 
-Hoja de vida - Fernando Hoyos
+Hola!
+
+Esta es mi hoja de vida - Fernando Hoyos
+
+pueden visualziar la pagina en el enlace abajo:
+
+link: https://fernandolhoyosh.doublehdevs.net/
 
 RAMA: project-1-cv
 
