@@ -6,7 +6,7 @@ Esta es mi hoja de vida - Fernando Hoyos
 
 pueden visualizar la pagina en el enlace abajo:
 
-link: https://fernandolhoyosh.doublehdevs.net/
+link: https://fernandolhoyosh.github.io/html-intro/
 
 RAMA: project-1-cv
 
